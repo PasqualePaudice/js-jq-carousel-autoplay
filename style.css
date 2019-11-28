@@ -1,0 +1,114 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body{
+    background-image: linear-gradient(to top, #00008b, #3c0058, #380030, #250016, #000000);
+}
+
+nav{
+    height:80px;
+    padding:0 2.5%;
+    color: white;
+    background-image: linear-gradient(to top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+    margin-bottom: 10px;
+}
+
+.left{
+    float: left;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+
+}
+
+a{
+    padding: 10px;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.right{
+    height: 100%;
+    width: 40%;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container{
+
+    margin:auto;
+    width: 90%;
+    height:600px;
+
+}
+
+.sez-immagine{
+    float: left;
+    width:90%;
+    height:100%;
+    position: relative;
+}
+
+.sez-frecce{
+    float: left;
+    width:5%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sez-frecce i{
+    font-size: 50px;
+}
+
+.sez-frecce i:hover{
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display:none;
+    /*object-fit: cover;*/
+}
+
+img.active{
+    display:block;
+}
+
+.sez-pallini{
+    position: absolute;
+    width: 200px;
+    height:40px;
+    bottom:10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sez-pallini span{
+    display: inline-block;
+    height: 20px;
+    width:20px;
+    border-radius: 100%;
+    border:0.5px solid lightblue;
+}
+
+.sez-pallini span:hover{
+    cursor: pointer;
+}
+
+.sez-pallini span.active{
+    background-color: lightblue;
+}
